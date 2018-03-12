@@ -1,24 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  MatMenuModule,
-  MatCardModule
-} from '@angular/material';
+
+import {MatButtonModule, MatCardModule, MatGridListModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 
-
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {GridLayoutComponent} from './grid-layout/grid-layout.component';
+import {AppRoutingModule} from './/app-routing.module';
+import {GridDynamicComponent} from './grid-dynamic/grid-dynamic.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridLayoutComponent,
+    GridDynamicComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,10 +29,13 @@ import { AppComponent } from './app.component';
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
-    MatSidenavModule
+    MatGridListModule,
+    MatSidenavModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { showFiller = false;
+export class AppModule {
+  showFiller = false;
 }

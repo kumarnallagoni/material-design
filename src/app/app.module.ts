@@ -3,7 +3,15 @@ import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
-import {MatButtonModule, MatCardModule, MatGridListModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatGridListModule,
+  MatIconModule,
+  MatMenuModule,
+  MatToolbarModule
+} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 
@@ -31,6 +39,7 @@ import {DashboardComponent} from './dashboard/dashboard.component';
     MatCardModule,
     MatGridListModule,
     MatSidenavModule,
+    MatDividerModule,
     AppRoutingModule
   ],
   providers: [],

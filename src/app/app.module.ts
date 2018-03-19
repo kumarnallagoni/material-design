@@ -1,15 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import {FormsModule} from '@angular/forms';
 
 import {
   MatButtonModule,
   MatCardModule,
   MatDividerModule,
+  MatFormFieldModule,
   MatGridListModule,
   MatIconModule,
   MatMenuModule,
+  MatStepperModule,
+  MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -20,6 +23,7 @@ import {GridLayoutComponent} from './grid-layout/grid-layout.component';
 import {AppRoutingModule} from './/app-routing.module';
 import {GridDynamicComponent} from './grid-dynamic/grid-dynamic.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {TabsComponent} from './tabs/tabs.component';
 
 
 @NgModule({
@@ -27,7 +31,8 @@ import {DashboardComponent} from './dashboard/dashboard.component';
     AppComponent,
     GridLayoutComponent,
     GridDynamicComponent,
-    DashboardComponent
+    DashboardComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,10 @@ import {DashboardComponent} from './dashboard/dashboard.component';
     MatGridListModule,
     MatSidenavModule,
     MatDividerModule,
+    MatTabsModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

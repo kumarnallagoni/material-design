@@ -1,5 +1,31 @@
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile>
+    <div class="logo"><img src="../assets/olive-logo.png" height="54" width="181"/></div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="button-row">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+      <button mat-raised-button color="primary"><a routerLink="dashboard">
+        <mat-icon aria-label="Example icon-button with a heart icon">home</mat-icon>
+        Dashboard</a></button>
+      <button mat-raised-button color="primary"><a routerLink="griddynamic">Grid Dynamic</a></button>
+      <button mat-raised-button color="primary"><a routerLink="dashboard">Expansion Panel</a></button>
+      <button mat-raised-button color="primary"><a routerLink="tabs">
+        <mat-icon aria-label="Example icon-button with a heart icon">tabs</mat-icon>
+        Tabs</a></button>
+      <a mat-raised-button routerLink="dashboard">
+        <mat-icon aria-label="Example icon-button with a heart icon">tabs</mat-icon>
+        Stepper</a>
 
+
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-divider></mat-divider>
+<mat-toolbar>Breadcrumbs: Home</mat-toolbar>
 
 <router-outlet></router-outlet>
 
-
+<mat-toolbar>Copyrights &copy; 2018 Design and Developed By Olive</mat-toolbar>

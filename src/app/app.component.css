@@ -16,6 +16,15 @@
   width: 300px;
 }
 
-mat-grid-tile {
-  background: lightblue;
+.logo {
+  width: 600px;
+  text-align: left;
 }
+
+button a {
+  color: #fff;
+}
+
+/*mat-grid-tile {
+  background: lightblue;
+}*/

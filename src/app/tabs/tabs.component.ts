@@ -22,6 +22,12 @@ export class TabsComponent implements OnInit {
   //     secondCtrl: ['', Validators.required]
   //   });
   // }
+  constructor() {
+  }
+
+
+  ngOnInit() {
+  }
 
 }
 

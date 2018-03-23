@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Choose Your Destiny:</h1>
+
+<div mat-dialog-content>
+  <mat-select [(ngModel)]="choosenEmoji" placeholder="Select Emoji">
+    <mat-option *ngFor="let emoji of data.emojis" [value]="emoji">
+      {{ emoji }}
+    </mat-option>
+  </mat-select>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="okayClick()" color="primary">
+    Okays!
+  </button>
+  <button mat-button (click)="dialogRef.close()">
+    Cancel
+  </button>
+</div>

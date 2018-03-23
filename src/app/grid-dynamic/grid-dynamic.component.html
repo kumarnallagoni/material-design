@@ -24,7 +24,7 @@
     </p>
   </mat-grid-tile>
 </mat-grid-list>-->
-<mat-grid-list cols="3">
+<mat-grid-list cols="3" rowHeight="600px">
   <mat-grid-tile>
     <mat-card class="example-card">
       <mat-card-header>
@@ -41,7 +41,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>LIKE</button>
+        <button mat-button (click)="openSnackBar()">LIKE</button>
         <button mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>

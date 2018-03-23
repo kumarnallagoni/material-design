@@ -6,14 +6,18 @@ import {FormsModule} from '@angular/forms';
 import {
   MatButtonModule,
   MatCardModule,
+  MatDialogModule,
   MatDividerModule,
   MatFormFieldModule,
   MatGridListModule,
   MatIconModule,
   MatMenuModule,
+  MatSelectModule,
+  MatSnackBarModule,
   MatStepperModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTooltipModule
 } from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -24,6 +28,7 @@ import {AppRoutingModule} from './/app-routing.module';
 import {GridDynamicComponent} from './grid-dynamic/grid-dynamic.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {TabsComponent} from './tabs/tabs.component';
+import {SnackbarComponent} from './snackbar/snackbar.component';
 
 
 @NgModule({
@@ -32,7 +37,8 @@ import {TabsComponent} from './tabs/tabs.component';
     GridLayoutComponent,
     GridDynamicComponent,
     DashboardComponent,
-    TabsComponent
+    TabsComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -49,10 +55,15 @@ import {TabsComponent} from './tabs/tabs.component';
     MatStepperModule,
     MatFormFieldModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    MatSelectModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [SnackbarComponent]
 })
 export class AppModule {
   showFiller = false;
